@@ -69,7 +69,7 @@ var isPalindrome = function (x) {
         let tab = ch.split('');
         let tabrev = tab.reverse('');
 
-        if (tab.join('') === tabrev.join('') == true);
+        if (tab.join('') == tabrev.join('') == true)
         {
             rt = estvrai;
         }
