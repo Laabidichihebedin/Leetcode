@@ -22,3 +22,6 @@ var fizzBuzz = function (n) {
     return tab ;
 };
 
+/*
+hey */
+console.log("hey");
