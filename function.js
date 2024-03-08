@@ -52,3 +52,39 @@ var twoSum = function (nums, target) {
 let nums = [2, 7, 11, 15];
 let target = 9;
 console.log(twoSum(nums, target));  // Outputs: [0, 1]
+/////////////////////////////////////////////////////////////
+
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function (x) {
+    let estvrai = true;
+    let estfaux = false;
+    
+    if (x > 10) {
+
+
+        let ch = x.toString();
+        let tab = ch.split('');
+        let tabrev = tab.reverse('');
+
+        if (tab.join('') === tabrev.join('') == true);
+        {
+            rt = estvrai;
+        }
+        else {
+        rt = estfaux;
+
+    }
+
+}
+
+    else {
+            rt = estfaux;
+        }
+return (rt);
+};
+
+
+
