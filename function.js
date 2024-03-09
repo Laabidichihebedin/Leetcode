@@ -85,6 +85,43 @@ var isPalindrome = function (x) {
         }
 return (rt);
 };
+///////////////// 20. Valid Parentheses (NOT YET done) 
+//// there is a problem of "Time Limit Exceeded"
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isValid = function (s) {
+    let i = 0;
+    let boo = false;
+
+    while (s[i] !== s[i + 1]) {
+        let j = 0;
+        do {
+            j++;
+        } while (boo === false);
+
+        if ((s[i] === '(') && (s[i + 1] === ')')) {
+            boo = true;
+            i++;
+        } else if ((s[i] === '[') && (s[i + 1] === ']')) {
+            boo = true;
+            i++;
+        } else if ((s[i] === '{') && (s[i + 1] === '}')) {
+            boo = true;
+            i++;
+        } else {
+            boo = false;
+        }
+    }
+
+    return boo;
+};
+///////////////////////
 
 
 
