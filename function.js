@@ -101,27 +101,30 @@ var isValid = function (s) {
 
     while (s[i] !== s[i + 1]) {
         let j = 0;
+        
         do {
-            j++;
-        } while (boo === false);
 
-        if ((s[i] === '(') && (s[i + 1] === ')')) {
+        if ((s[i] === '(' ) && (s[i + 1] === ')')) {
             boo = true;
             i++;
+            break;
         } else if ((s[i] === '[') && (s[i + 1] === ']')) {
             boo = true;
             i++;
+            break;
         } else if ((s[i] === '{') && (s[i + 1] === '}')) {
             boo = true;
             i++;
+            break;
         } else {
             boo = false;
+            break;
         }
+        
+    } 
+    while (boo === false);
+        
     }
 
     return boo;
 };
-///////////////////////
-
-
-
